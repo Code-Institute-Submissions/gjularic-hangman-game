@@ -2,6 +2,13 @@
 import random
 from wordList import word_list
 
+
+def random_word():
+        word = random.choice(word_list)
+        print(word)
+
+random_word()
+
 HANGMAN = [
 """        -------
         |     |
@@ -92,5 +99,3 @@ HANGMAN = [
 |                | /
 |________________|/"""
 ]
-
-print(HANGMAN[0])
