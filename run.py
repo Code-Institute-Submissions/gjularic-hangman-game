@@ -1,4 +1,8 @@
-print(
+#Importing "random" to get the random word and word list
+import random
+from wordList import word_list
+
+HANGMAN = [
 """        -------
         |     |
         |      
@@ -87,4 +91,6 @@ print(
  /_______________/ |
 |                | /
 |________________|/"""
-)
+]
+
+print(HANGMAN[0])
