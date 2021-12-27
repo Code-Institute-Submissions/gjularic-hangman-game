@@ -10,6 +10,7 @@
 ##Testing
 
 - tested if the HANGMAN variable is displaying hangman graphic correctly in the console
+- tested random word generation
 
 ## Credits
 
