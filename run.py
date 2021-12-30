@@ -127,6 +127,16 @@ while wrong_guess < max_guess and current_guess != word:
         if user_guess in word:
                 print("Correct! Letter", user_guess, "is in the word.")
 
+                # Update the status of the word
+                update_current_guess = ''
+                for i in range(len(word)):
+                        if user_guess == word[i]:
+                                update_current_guess += user_guess
+                        else:
+                                update_current_guess += current_guess[i]
+
+                current_guess = update_current_guess
+
         
 
         
