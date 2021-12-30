@@ -137,6 +137,15 @@ while wrong_guess < max_guess and current_guess != word:
 
                 current_guess = update_current_guess
 
+        else:
+                print("Wrong :( Letter", user_guess, "is not in the word.")
+                wrong_guess += 1  # Incrementing wrong guess so that the hangman status can be displayed correctly
+                max_guess -= 1    # Decrementing maximum amount of guesses so that game can end if failed
+
+        print(max_guess)
+        print(wrong_guess)
+
+
         
 
         
