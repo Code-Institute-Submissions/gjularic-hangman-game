@@ -144,8 +144,13 @@ while wrong_guess < 7 and current_guess != word:
 
         print("Chances left:", max_guess)
 
-
-        
+#Ending the game
+if wrong_guess == 7:
+        print(HANGMAN[wrong_guess])
+        print("Stickman has been hanged! You Lost!")  
+        print("Correct word is:", word)
+else:
+        print("You saved the Stickman! You Won!") 
 
 
         
