@@ -17,6 +17,8 @@
 ## Credits
 
 - [W3schools](https://www.w3schools.com/)
+- [Hangman ASCII art](https://github.com/gieseanw/Hangman/blob/master/HangmanLogo2.txt) - made and adjusted the states from it
 
 ## Bugs
 - main while loop is stopping before user runs out of 7 tries - condition set up in the while loop needed to be changed
+- it's possible to type in the same letter infinite number of times - added if statement to fix this

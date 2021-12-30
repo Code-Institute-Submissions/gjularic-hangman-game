@@ -119,6 +119,12 @@ while wrong_guess < 7 and current_guess != word:
         print("Letters that have been used: ", guessed_letters)
         print("Your guess so far: ", current_guess)
         user_guess = input("Type in the letter and see if it's in the word: ").upper() # get user input letter and change to uppercase
+        
+        # if statement to check if the letter was already guessed
+        if user_guess in guessed_letters:
+                print("You have already tried the letter:", user_guess)
+                user_guess = input("Type in another letter: ").upper()
+
         guessed_letters.append(user_guess) # add the letter to the list of used letters
 
         # Check if the user guess is correct
