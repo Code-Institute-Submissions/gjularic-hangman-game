@@ -118,8 +118,9 @@ while wrong_guess < max_guess and current_guess != word:
         print(HANGMAN[wrong_guess])
         print("Letters that have been used: ", guessed_letters)
         print("Your guess so far: ", current_guess)
+        user_guess = input("Type in the letter and see if it's in the word: ").upper() # get user input letter and change to uppercase
+        guessed_letters.append(user_guess) # add the letter to the list of used letters
 
-        user_guess = input("Type in the letter and see if It's in the word: ").upper()
+        
 
-        print(user_guess)
         
