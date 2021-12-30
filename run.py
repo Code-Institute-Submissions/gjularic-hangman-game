@@ -114,7 +114,7 @@ guessed_letters = []
 # Main loop that checks if user has enough guesses left to continue,
 # to end the game if the whole word was guessed,
 # or if user failed to guess it and ran out of guesses
-while wrong_guess < max_guess and current_guess != word:
+while wrong_guess < 7 and current_guess != word:
         print(HANGMAN[wrong_guess])
         print("Letters that have been used: ", guessed_letters)
         print("Your guess so far: ", current_guess)
@@ -142,8 +142,10 @@ while wrong_guess < max_guess and current_guess != word:
                 wrong_guess += 1  # Incrementing wrong guess so that the hangman status can be displayed correctly
                 max_guess -= 1    # Decrementing maximum amount of guesses so that game can end if failed
 
-        print(max_guess)
-        print(wrong_guess)
+        print("Chances left:", max_guess)
+
+
+        
 
 
         

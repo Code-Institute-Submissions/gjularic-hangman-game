@@ -17,3 +17,6 @@
 ## Credits
 
 - [W3schools](https://www.w3schools.com/)
+
+## Bugs
+- main while loop is stopping before user runs out of 7 tries - condition set up in the while loop needed to be changed
