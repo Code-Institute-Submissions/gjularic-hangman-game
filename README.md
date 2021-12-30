@@ -12,6 +12,7 @@
 - tested if the HANGMAN variable is displaying hangman graphic correctly in the console
 - tested random word generation
 - tested user input guess
+- used letters are being added to the list correctly
 
 ## Credits
 

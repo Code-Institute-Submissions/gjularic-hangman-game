@@ -121,6 +121,12 @@ while wrong_guess < max_guess and current_guess != word:
         user_guess = input("Type in the letter and see if it's in the word: ").upper() # get user input letter and change to uppercase
         guessed_letters.append(user_guess) # add the letter to the list of used letters
 
+        # Check if the user guess is correct
+        # and get the current status of the word
+        # with letters and dashes included
+        if user_guess in word:
+                print("Correct! Letter", user_guess, "is in the word.")
+
         
 
         
