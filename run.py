@@ -2,7 +2,7 @@
 import random
 from wordList import word_list
 
-#Main varibles
+#Hangman display
 HANGMAN = [
 """        -------
         |     |
@@ -109,3 +109,17 @@ current_guess = "-" * len(word)
 max_guess = 7
 wrong_guess = 0
 guessed_letters = []
+
+
+# Main loop that checks if user has enough guesses left to continue,
+# to end the game if the whole word was guessed,
+# or if user failed to guess it and ran out of guesses
+while wrong_guess < max_guess and current_guess != word:
+        print(HANGMAN[wrong_guess])
+        print("Letters that have been used: ", guessed_letters)
+        print("Your guess so far: ", current_guess)
+
+        user_guess = input("Type in the letter and see if It's in the word: ").upper()
+
+        print(user_guess)
+        

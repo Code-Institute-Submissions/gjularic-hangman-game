@@ -7,10 +7,11 @@
 - Python
 - [Lucidchart](https://lucid.co/) - for flowchart
 
-##Testing
+## Testing
 
 - tested if the HANGMAN variable is displaying hangman graphic correctly in the console
 - tested random word generation
+- tested user input guess
 
 ## Credits
 
