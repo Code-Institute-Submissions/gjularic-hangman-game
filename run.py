@@ -121,8 +121,8 @@ while wrong_guess < 7 and current_guess != word:
         user_guess = input("Type in the letter and see if it's in the word: ").upper() # get user input letter and change to uppercase
         
         # while statement to check if the user typed in the number, which is not allowed
-        while user_guess.isdigit():
-                user_guess = input("Numbers are not the part of the word! Type in the letter: ").upper()
+        while user_guess.isdigit() or len(user_guess) != 1:
+                user_guess = input("Numbers and multiple letters are not allowed! Type in 1 letter: ").upper()
 
         # while statement to check if the letter was already guessed
         while user_guess in guessed_letters:
