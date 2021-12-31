@@ -15,6 +15,7 @@
 - used letters are being added to the list correctly
 - status of the word is being updated correctly every turn
 - tested while loops that are checking if user is typing numbers or multiple letters
+- tested if play_again function works properly
 
 ## Credits
 
@@ -27,3 +28,4 @@
 - it's possible to type in the same letter infinite number of times - added while loop to fix this
 - user could type in the numbers - added while loop to fix, it will check if the user input is a number or letter
 - user can type in multiple letters - added this into while loop so that only one letter can be typed in
+- there's no way to play again when the game ends - put the code into separate functions as it has became more complex and to allow replayability

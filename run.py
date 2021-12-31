@@ -96,7 +96,13 @@ HANGMAN = [
 
 #Main game
 def first_display():
-        print("Hangman game")
+        print("""
+{}    {}    {}{}     {}    {}    {}}}}}    {}      {}    {}{}     {}    {}
+{}    {}   {}  {}    {}}}  {}   {}    {}   {}}}  {{{}   {}  {}    {}}}  {}
+{}{{}}{}  {}{{}}{}   {} {} {}   {}         {} {{}} {}  {}{{}}{}   {} {} {}
+{}    {}  {}    {}   {}  {{{}   {}  {{{{   {}  {}  {}  {}    {}   {}  {{{}
+{}    {}  {}    {}   {}    {}    {}}}}}    {}      {}  {}    {}   {}    {}
+        """)
         print(HANGMAN[7])
         name = input("Enter your name: ")
         print("Welcome", name, "!")
@@ -105,7 +111,7 @@ def first_display():
 def start_game():
         #Main Variables
         global word
-        global current_guessg
+        global current_guess
         global max_guess
         global wrong_guess
         global guessed_letters
