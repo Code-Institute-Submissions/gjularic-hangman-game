@@ -26,4 +26,4 @@
 - main while loop is stopping before user runs out of 7 tries - condition set up in the while loop needed to be changed
 - it's possible to type in the same letter infinite number of times - added while loop to fix this
 - user could type in the numbers - added while loop to fix, it will check if the user input is a number or letter
-- user can type in multiple letters - added this into while statement so that only one letter can be typed in
+- user can type in multiple letters - added this into while loop so that only one letter can be typed in
