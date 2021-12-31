@@ -104,7 +104,7 @@ def first_display():
 {}    {}  {}    {}   {}    {}    {}}}}}    {}      {}  {}    {}   {}    {}
         """)
         print(HANGMAN[7])
-        name = input("Enter your name: ")
+        name = input("Enter your name: \n")
         print("Welcome", name, "!")
         print("Try to guess the word before the stickman gets hanged, you have 7 guesses available!")
 
@@ -127,16 +127,16 @@ def start_game():
                 print(HANGMAN[wrong_guess])
                 print("Letters that have been used: ", guessed_letters)
                 print("Your guess so far: ", current_guess)
-                user_guess = input("Type in the letter and see if it's in the word: ").upper() # get user input letter and change to uppercase
+                user_guess = input("Type in the letter and see if it's in the word: \n").upper() # get user input letter and change to uppercase
                 
                 # while statement to check if the user typed in the number, which is not allowed
                 while user_guess.isdigit() or len(user_guess) != 1:
-                        user_guess = input("Numbers and multiple letters are not allowed! Type in 1 letter: ").upper()
+                        user_guess = input("Numbers and multiple letters are not allowed! Type in 1 letter: \n").upper()
 
                 # while statement to check if the letter was already guessed
                 while user_guess in guessed_letters:
                         print("You have already tried the letter:", user_guess)
-                        user_guess = input("Type in another letter: ").upper()
+                        user_guess = input("Type in another letter: \n").upper()
 
                 guessed_letters.append(user_guess) # add the letter to the list of used letters
 
@@ -175,7 +175,7 @@ def end_game():
 
 # Play again function
 def play_again():
-        user_response = input("Do you want to play again? Y/N: ").upper()
+        user_response = input("Do you want to play again? Y/N: \n").upper()
         if user_response == "Y":
                 return hangman()
         else:
