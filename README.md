@@ -13,6 +13,7 @@
 - tested random word generation
 - tested user input guess
 - used letters are being added to the list correctly
+- status of the word is being updated correctly every turn
 
 ## Credits
 
@@ -21,4 +22,5 @@
 
 ## Bugs
 - main while loop is stopping before user runs out of 7 tries - condition set up in the while loop needed to be changed
-- it's possible to type in the same letter infinite number of times - added if statement to fix this
+- it's possible to type in the same letter infinite number of times - added while statement to fix this
+- user could type in the numbers - added while statement to fix

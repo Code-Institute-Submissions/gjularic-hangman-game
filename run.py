@@ -120,8 +120,12 @@ while wrong_guess < 7 and current_guess != word:
         print("Your guess so far: ", current_guess)
         user_guess = input("Type in the letter and see if it's in the word: ").upper() # get user input letter and change to uppercase
         
-        # if statement to check if the letter was already guessed
-        if user_guess in guessed_letters:
+        # while statement to check if the user typed in the number, which is not allowed
+        while user_guess.isdigit():
+                user_guess = input("Numbers are not the part of the word! Type in the letter: ").upper()
+
+        # while statement to check if the letter was already guessed
+        while user_guess in guessed_letters:
                 print("You have already tried the letter:", user_guess)
                 user_guess = input("Type in another letter: ").upper()
 
@@ -156,7 +160,7 @@ if wrong_guess == 7:
         print("Stickman has been hanged! You Lost!")  
         print("Correct word is:", word)
 else:
-        print("You saved the Stickman! You Won!") 
+        print("You saved the Stickman! You Won!")
 
 
         
