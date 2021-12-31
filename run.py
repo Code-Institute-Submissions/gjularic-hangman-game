@@ -172,6 +172,7 @@ def end_game():
                 print("Correct word is:", word)
         else:
                 print("You saved the Stickman! You Won!")
+                print("Correct word is:", word)
 
 # Play again function
 def play_again():
