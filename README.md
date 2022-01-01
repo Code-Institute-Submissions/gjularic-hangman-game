@@ -12,7 +12,16 @@ https://github.com/gjularic/hangman-game
 
 ## Objective
 
-Design an interactive Hangman game that can be constantly replayed. Project runs in a terminal and is deployed via Heroku, using Python.
+Design an interactive Hangman game that can be constantly replayed. The Project runs in a terminal and is deployed via Heroku, using Python.
+
+---
+## Features
+
+- The Game displays the hangman art depending on how many letters have been guessed wrong
+- It will show how many chances are left until the game has been lost
+- List of already used letters will be shown every turn
+- Current state of the word is being displayed
+- Finally, when the game is lost or won, user will get an option to play again
 
 ---
 
@@ -40,7 +49,7 @@ Design an interactive Hangman game that can be constantly replayed. Project runs
 - it's possible to type in the same letter infinite number of times - added while loop to fix this
 - user could type in the numbers - added while loop to fix, it will check if the user input is a number or letter
 - user can type in multiple letters - added this into while loop so that only one letter can be typed in
-- there's no way to play again when the game ends - put the code into separate functions as it has became more complex and to allow replayability
+- there's no way to play again when the game ends - put the code into separate functions as it has become more complex and to allow replayability
 
 ## Deployment
 
@@ -62,4 +71,4 @@ Design an interactive Hangman game that can be constantly replayed. Project runs
 
 - [W3schools](https://www.w3schools.com/)
 - [Hangman ASCII art](https://github.com/gieseanw/Hangman/blob/master/HangmanLogo2.txt) - made and adjusted the states from it
-- [StackOwerflow](https://stackoverflow.com/)
+- [StackOverflow](https://stackoverflow.com/)
