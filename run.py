@@ -129,7 +129,7 @@ def start_game():
                 print("Your guess so far: ", current_guess)
                 user_guess = input("Type in the letter and see if it's in the word: \n").upper() # get user input letter and change to uppercase
                 
-                # while statement to check if the user typed in the number, which is not allowed
+                # while statement to check if the user typed in the number or multiple letters, which is not allowed
                 while user_guess.isdigit() or len(user_guess) != 1:
                         user_guess = input("Numbers and multiple letters are not allowed! Type in 1 letter: \n").upper()
 
