@@ -190,8 +190,3 @@ def hangman():
 
 first_display()
 hangman()
-
-
-        
-
-        

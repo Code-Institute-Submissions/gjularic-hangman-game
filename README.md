@@ -1,3 +1,21 @@
+# Hangman
+
+![hangman](images//hangman.PNG)
+
+## Live Site
+
+[Hangman](https://hangman-project-3.herokuapp.com/)
+
+## Repository
+
+https://github.com/gjularic/hangman-game
+
+## Objective
+
+Design an interactive Hangman game that can be constantly replayed. Project runs in a terminal and is deployed via Heroku, using Python.
+
+---
+
 ## Flowchart
 
 ![Flowchart](images//flowchart.png)
