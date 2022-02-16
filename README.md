@@ -36,6 +36,14 @@ Design an interactive Hangman game that can be constantly replayed. The Project 
 
 ## Testing
 
+### Validator Testing
+
+- [Python Validator](http://pep8online.com/)
+
+    - `run.py` result
+
+    ![pep8](images/pep8test.png)
+
 - tested if the HANGMAN variable is displaying hangman graphic correctly in the console
 - tested random word generation
 - tested user input guess
