@@ -108,8 +108,8 @@ def first_display():
         print(HANGMAN[7])
         name = input("Enter your name: \n")
         print("Welcome", name, "!")
-        print("Try to guess the word before the stickman gets \
-              hanged, you have 7 guesses available!")
+        print("Try to guess the word before the stickman gets " +
+              "hanged, you have 7 guesses available!")
 
 
 def start_game():
@@ -133,21 +133,21 @@ def start_game():
                 print("Your guess so far: ", current_guess)
 
                 # get user input letter and change to uppercase
-                user_guess = input("Type in the letter and see if \
-                                   it's in the word: \n").upper()
+                user_guess = input("Type in the letter and see if " +
+                                   "it's in the word: \n").upper()
 
                 # while statement to check if the user typed in the number or
                 # multiple letters, which is not allowed
                 while user_guess.isdigit() or len(user_guess) != 1:
-                        user_guess = input("Numbers and multiple letters \
-                                           are not allowed! Type in 1 \
-                                           letter: \n").upper()
+                        user_guess = input("Numbers and multiple letters " +
+                                           "are not allowed! Type in 1 " +
+                                           "letter: \n").upper()
 
                 # while statement to check if the letter was already guessed
                 while user_guess in guessed_letters:
                         print("You have already tried the letter:", user_guess)
-                        user_guess = input("Type in another \
-                                           letter: \n").upper()
+                        user_guess = input("Type in another " +
+                                           "letter: \n").upper()
 
                 # add the letter to the list of used letters
                 guessed_letters.append(user_guess)
