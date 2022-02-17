@@ -31,7 +31,7 @@ Design an interactive Hangman game that can be constantly replayed. The Project 
 
 ## Technologies used
 
-- Python
+- Python 3.8.10
 - [Lucidchart](https://lucid.co/) - for flowchart
 
 ## Testing
@@ -44,13 +44,22 @@ Design an interactive Hangman game that can be constantly replayed. The Project 
 
     ![pep8](images/pep8test.png)
 
-- tested if the HANGMAN variable is displaying hangman graphic correctly in the console
-- tested random word generation
-- tested user input guess
-- used letters are being added to the list correctly
-- status of the word is being updated correctly every turn
-- tested while loops that are checking if user is typing numbers or multiple letters
-- tested if play_again function works properly
+- tested if the HANGMAN variable is displaying hangman graphic correctly in the console - working as intended, no issues in the graphics
+- tested random word generation with 'print()' command - computer is picking random words as intended
+- tested user input guess - guessed letter is being displayed correctly in the word:
+
+    ![userGuess](images/userGuess.png)
+- tested if used letters are being added to the list - works as intended:
+
+    ![lettersList](images/lettersList.png)
+- tested if status of the word is being updated every turn - works correctly, being updated at the same time as used letters
+- tested while loops that are checking if user is typing numbers or multiple letters - displays the warning as intended:
+
+
+    ![numMultLetterError](images/numMultLetterError.png)
+- tested if play_again function works properly - works as intended, it will restart the game after typing in "y" or stop it if "n" is being input:
+
+    ![playAgain](images/playAgain.png)
 
 ## Bugs
 - main while loop is stopping before user runs out of 7 tries - condition set up in the while loop needed to be changed
