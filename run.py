@@ -106,7 +106,29 @@ def first_display():
 {}    {}  {}    {}   {}    {}    {}}}}}    {}      {}  {}    {}   {}    {}
         """)
         print(HANGMAN[7])
-        name = input("Enter your name: \n")
+        name = []
+
+# Function to check if the user has typed in the username
+# and if not displays the warning
+
+        def user_name():
+                while True:
+                        try:
+                                name_input = str(input("Please enter your " +
+                                                 "first name: \n"))
+                                if (len(name_input) > 2 and
+                                        name_input.isalpha()):
+                                        name.append(name_input)
+                                        break
+                                else:
+                                        raise TypeError
+                        except TypeError:
+                                print("Letters only please.")
+                                continue
+                        except EOFError:
+                                print("Please input something....")
+                        continue
+        user_name()
         print("Welcome", name, "!")
         print("Try to guess the word before the stickman gets " +
               "hanged, you have 7 guesses available!")
@@ -138,8 +160,9 @@ def start_game():
 
                 # while statement to check if the user typed in the number or
                 # multiple letters, which is not allowed
-                while user_guess.isdigit() or len(user_guess) != 1:
-                        user_guess = input("Numbers and multiple letters " +
+                while user_guess.isalpha() is False or len(user_guess) != 1:
+                        user_guess = input("Numbers, multiple letters and " +
+                                           "special characters " +
                                            "are not allowed! Type in 1 " +
                                            "letter: \n").upper()
 
